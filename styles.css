@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-height: 100%;
+}
+
+.panels {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    font-family: 'Bubbler One', sans-serif;
+    justify-content: space-around;
+}
+
+.panel {
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    font-size: 2em;
+    background-size: cover;
+    background-position: center;
+    transition: flex 0.5s cubic-bezier(0.61, -0.19, 0.7, -0.11);
+}
+
+.panel > * {
+    margin: 0;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s 0.5s;
+}
+
+.panel div {
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+}
+.panel div:first-child {
+    transform: translateY(-100%);
+}
+.panel div:last-child {
+    transform: translateY(100%);
+}
+.panel.open-active {
+    flex: 5;
+}
+.panel.open-active > div:first-child,
+.panel.open-active > div:last-child {
+    transform: translateY(0);
+}
+
+
+.panel1 {
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('./img/tree.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.panel2 {
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('./img/limes.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.panel3 {
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('./img/ash-joe-barn.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.panel4 {
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('./img/cake.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.panel5 {
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('./img/flowers.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+@media(max-width: 800px) {
+    .panels {
+        flex-direction: column;
+    }
+    .panel div:first-child {
+        transform: translateX(-100%);
+    }
+    .panel div:last-child {
+        transform: translateX(100%);
+    }
+    .panel.open-active > div:first-child,
+    .panel.open-active > div:last-child {
+        transform: translateX(0);
+    }
+}
