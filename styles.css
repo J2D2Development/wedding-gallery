@@ -60,31 +60,31 @@ html, body {
 
 
 .panel1 {
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('./img/tree.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('./img/tree.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 .panel2 {
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('./img/limes.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('./img/limes.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 .panel3 {
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('./img/ash-joe-barn.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('./img/ash-joe-barn.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 .panel4 {
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('./img/cake.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('./img/cake.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 .panel5 {
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('./img/flowers.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('./img/flowers.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
